@@ -69,7 +69,7 @@ const DashboardHeader = () => {
           {/* <CardioSenseLogo /> */}
 
           <span className="font-bold text-sm sm:text-lg hidden sm:inline">
-            CardioSense
+            MediSense
           </span>
         </div>
       </div>

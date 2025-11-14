@@ -89,7 +89,7 @@ export function HowTo() {
           <div className="w-full overflow-hidden rounded-md border border-border" style={{ aspectRatio: "16 / 9" }}>
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${configuredId}?rel=0`}
-              title="CardioSense video tutorial"
+              title="MediSense video tutorial"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

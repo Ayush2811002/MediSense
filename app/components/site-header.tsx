@@ -8,7 +8,8 @@ export function SiteHeader() {
     <header className="w-full border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2" aria-label="CardioSense Home">
-          <Image src={cardiosense_logo} alt="CardioSense logo" className="w-50 m-2 ms-0 rounded" />
+          {/* <Image src={cardiosense_logo} alt="CardioSense logo" className="w-50 m-2 ms-0 rounded" /> */}
+          MediSense
         </Link>
 
         <nav aria-label="Primary" className="hidden md:flex items-center gap-6">

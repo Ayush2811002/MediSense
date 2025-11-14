@@ -29,7 +29,7 @@ export function Header({ onMenuClick }: HeaderProps) {
           {/* <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xs sm:text-sm">CS</span>
           </div> */}
-          <span className="font-bold text-sm sm:text-lg hidden sm:inline">CardioSense</span>
+          <span className="font-bold text-sm sm:text-lg hidden sm:inline">MediSense</span>
         </div>
       </div>
 
