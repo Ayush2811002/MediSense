@@ -56,7 +56,7 @@ export default function PatientDashboard({
       {/* 🔴 Live Section */}
       <div className="bg-white rounded-lg shadow p-6">
         <h2 className="text-lg font-semibold text-red-600 mb-4 flex items-center gap-2">
-          🔴 Live{" "}
+          🔴 Live 
           <span className="text-gray-500 font-normal">Live readings</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -23,9 +23,9 @@ export default function DashboardLayout({
         <main className="flex-1 p-6 overflow-y-auto">{children}</main>
 
         {/* Chat Panel: Fixed width, part of the flex row, responsive. */}
-        <aside className="hidden lg:block w-[384px] p-6 pr-4">
+        {/* <aside className="hidden lg:block w-[384px] p-6 pr-4">
           <ChatPanel />
-        </aside>
+        </aside> */}
       </div>
     </div>
   );
