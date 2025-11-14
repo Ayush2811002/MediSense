@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { HospitalsContent } from "@/components/hospitals/hospitals-content"
+import { HospitalsContent } from "@/components/hospitals/HospitalsContent"
 
 export default function HospitalsPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
