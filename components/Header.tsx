@@ -1,10 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-import { Bell, Settings, Menu } from "lucide-react";
+import { Bell, Settings, Menu, User } from "lucide-react";
 import cardiosense_logo from "@/app/img/cardiosense_logo.svg";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // Mock notifications (fixed missing fields)
 const mockNotifications = [
@@ -43,6 +50,7 @@ const CardioSenseLogo = () => (
 const DashboardHeader = () => {
   // FIX: missing state
   const [notificationsOpen, setNotificationsOpen] = useState(false);
+    const pathname = usePathname();
 
   // FIX: notifications reference
   const notifications = mockNotifications;
@@ -77,7 +85,10 @@ const DashboardHeader = () => {
       {/* Right: Settings + Notifications */}
       <div className="flex items-center gap-1 sm:gap-2">
         {/* Notifications Dropdown */}
-        <DropdownMenu open={notificationsOpen} onOpenChange={setNotificationsOpen}>
+        <DropdownMenu
+          open={notificationsOpen}
+          onOpenChange={setNotificationsOpen}
+        >
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
@@ -109,10 +120,23 @@ const DashboardHeader = () => {
           </DropdownMenuContent>
         </DropdownMenu>
 
-        {/* Settings */}
+        {/* Settings
         <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10">
           <Settings className="h-4 w-4 sm:h-5 sm:w-5" />
-        </Button>
+        </Button> */}
+        {/* Profile Page */}
+        <div className="border-t p-3 flex justify-center">
+          <Link href="/profile">
+            <Button
+              variant={pathname.startsWith("/profile") ? "default" : "ghost"}
+              size="icon"
+              className="h-11 w-11"
+              title="Profile"
+            >
+              <User className="h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </header>
   );

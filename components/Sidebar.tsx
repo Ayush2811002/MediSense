@@ -107,7 +107,7 @@ export default function Sidebar() {
         </nav>
 
         {/* Profile */}
-        <div className="border-t p-3 flex justify-center">
+        {/* <div className="border-t p-3 flex justify-center">
           <Link href="/profile">
             <Button
               variant={pathname.startsWith("/profile") ? "default" : "ghost"}
@@ -119,7 +119,7 @@ export default function Sidebar() {
               <User className="h-5 w-5" />
             </Button>
           </Link>
-        </div>
+        </div> */}
       </aside>
     </>
   );
