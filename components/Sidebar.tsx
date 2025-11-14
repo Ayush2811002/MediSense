@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Home, Calendar, MapPin, Zap, User, X, Menu } from "lucide-react";
+import { Home, Calendar, MapPin, Zap, User, X, Menu, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/types/utils";
@@ -30,6 +30,18 @@ export default function Sidebar() {
       label: "Quick Health Prediction",
       icon: Zap,
       href: "/dashboard/prediction",
+    },
+    {
+      id: "chat",
+      label: "AI Chat",
+      icon: Bot,
+      href: "/dashboard/chat",
+    },
+    {
+      id: "reminders",
+      label: "Reminders",
+      icon: Calendar,
+      href: "/dashboard/reminders",
     },
   ];
 
