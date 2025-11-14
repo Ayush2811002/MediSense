@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TODO",
+  title: "CardioSense",
   description: "IoT-based heart monitoring system",
 };
 

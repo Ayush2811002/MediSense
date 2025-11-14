@@ -1,44 +1,27 @@
-import Link from "next/link";
-import { Button } from "../components/ui/button";
+import Link from "next/link"
+import { Button } from "../components/ui/button"
 import Image from "next/image";
-import cardiosense_logo from "../img/cardiosense_logo.svg";
+import cardiosense_logo from "../img/cardiosense_logo.svg"
 
 export function SiteHeader() {
   return (
     <header className="w-full border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <Link
-          href="/"
-          className="flex items-center gap-2"
-          aria-label="CardioSense Home"
-        >
-          {/* <Image src={cardiosense_logo} alt="CardioSense logo" className="w-50 m-2 ms-0 rounded" /> */}
-          LOGO
+        <Link href="/" className="flex items-center gap-2" aria-label="CardioSense Home">
+          <Image src={cardiosense_logo} alt="CardioSense logo" className="w-50 m-2 ms-0 rounded" />
         </Link>
 
         <nav aria-label="Primary" className="hidden md:flex items-center gap-6">
-          <Link
-            href="/"
-            className="text-sm hover:text-primary transition-colors"
-          >
+          <Link href="/" className="text-sm hover:text-primary transition-colors">
             Home
           </Link>
-          <Link
-            href="/about"
-            className="text-sm hover:text-primary transition-colors"
-          >
+          <Link href="/about" className="text-sm hover:text-primary transition-colors">
             About
           </Link>
-          <Link
-            href="/contact"
-            className="text-sm hover:text-primary transition-colors"
-          >
+          <Link href="/contact" className="text-sm hover:text-primary transition-colors">
             Contact
           </Link>
-          <Link
-            href="/faqs"
-            className="text-sm hover:text-primary transition-colors"
-          >
+          <Link href="/faqs" className="text-sm hover:text-primary transition-colors">
             FAQS
           </Link>
         </nav>
@@ -53,10 +36,7 @@ export function SiteHeader() {
       </div>
 
       {/* Mobile nav */}
-      <nav
-        aria-label="Primary mobile"
-        className="md:hidden border-t border-border"
-      >
+      <nav aria-label="Primary mobile" className="md:hidden border-t border-border">
         <div className="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between text-sm">
           <Link href="/" className="hover:text-primary">
             Home
@@ -76,5 +56,5 @@ export function SiteHeader() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
