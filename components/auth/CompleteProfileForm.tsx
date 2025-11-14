@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ref, set, get } from "firebase/database";
-import { auth, db } from "@/types/firebase";
+import { auth, db } from "@/lib/firebase";
 import { useAppDispatch } from "@/store/hooks";
 import { setUser } from "@/store/authSlice";
 import type { DoctorUser, PatientUser } from "@/types/auth";
