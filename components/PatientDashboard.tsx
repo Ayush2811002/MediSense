@@ -131,9 +131,9 @@ export default function PatientDashboard({
         {/* <Link href="/appointments">
           <ActionCard icon={<Shield />} label="Health Card" />
         </Link> */}
-        <Link href="/emergency">
+        <div onClick={() => alert("Calling emergency hotline...")}>
           <ActionCard icon={<Activity />} label="Emergency Hotline" />
-        </Link>
+        </div>
       </div>
 
       {/* Vitals */}
